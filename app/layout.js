@@ -74,7 +74,7 @@ const jsonLd = {
     addressCountry: "ID",
   },
   telephone: "+6281297002395",
-  priceRange: "Rp150.000 - Rp750.000",
+  priceRange: "Rp150.000 - Rp5.000.000",
   openingHours: "Mo-Su 09:00-18:00",
   sameAs: [
     "https://www.instagram.com/astercustomlab",

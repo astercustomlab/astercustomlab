@@ -64,8 +64,8 @@ export default function Contact() {
 
         <div className="sm:col-span-5 text-sm text-steel space-y-1.5">
           <p className="text-bone/90 font-medium text-base">Aster Custom Lab</p>
-          <p>Bakti Jaya, Kec. Setu, Kota Tangerang Selatan, Banten 15315</p>
-          <p>Setiap hari, 09.00–18.00 WIB</p>
+          <p>Jl. Komplek Luk L No. 4 Bakti Jaya, Kec. Setu, Kota Tangerang Selatan, Banten 15315</p>
+          <p>Setiap hari, 10.00–18.00 WIB</p>
           <p className="pt-2">WhatsApp: 0812-9700-2395</p>
         </div>
       </div>
