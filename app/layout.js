@@ -15,7 +15,22 @@ const body = Work_Sans({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://astercustomlab.vercel.app";
+const DEFAULT_SITE_URL = "https://astercustomlab.vercel.app";
+
+// Kalau NEXT_PUBLIC_SITE_URL keisi nilai yang bukan URL valid (typo, tanpa
+// https://, ada spasi/tanda kutip nyangkut, dst.), jangan sampai itu bikin
+// seluruh halaman down — jatuhkan ke URL default saja.
+function resolveSiteUrl() {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (!raw) return DEFAULT_SITE_URL;
+  try {
+    return new URL(raw).toString().replace(/\/$/, "");
+  } catch {
+    return DEFAULT_SITE_URL;
+  }
+}
+
+const siteUrl = resolveSiteUrl();
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -74,7 +89,7 @@ const jsonLd = {
     addressCountry: "ID",
   },
   telephone: "+6281297002395",
-  priceRange: "Rp150.000 - Rp5.000.000",
+  priceRange: "Rp150.000 - Rp750.000",
   openingHours: "Mo-Su 09:00-18:00",
   sameAs: [
     "https://www.instagram.com/astercustomlab",

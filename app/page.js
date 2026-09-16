@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Promo from "@/components/Promo";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -24,6 +25,7 @@ export default function Home() {
         <Promo />
         <Gallery />
         <Testimonials />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
