@@ -71,6 +71,9 @@ export const metadata = {
   icons: {
     icon: "/logo.png",
   },
+  verification: {
+    google: "8HA23TGOjjOJL0W90Hve3zzYvX_xsumphrXcmLpk-yU",
+  },
 };
 
 const jsonLd = {
@@ -89,7 +92,7 @@ const jsonLd = {
     addressCountry: "ID",
   },
   telephone: "+6281297002395",
-  priceRange: "Rp150.000 - Rp750.000",
+  priceRange: "Rp150.000 - Rp2.000.000",
   openingHours: "Mo-Su 09:00-18:00",
   sameAs: [
     "https://www.instagram.com/astercustomlab",
